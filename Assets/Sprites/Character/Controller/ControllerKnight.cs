@@ -9,11 +9,8 @@ public class ControllerKnight : MonoBehaviour {
     public Transform groundCheck;
     private float groundRadius = 0.1f;
     public LayerMask queEsGround;
-    private bool jumpPresion = false;
-    public float jumpFuerza = 700f;
     private float move;
     private bool facingRight = true;
-    public float maxSpeed = 10f;
     
 	void Start () {
         rb = GetComponent<Rigidbody2D>();
@@ -21,7 +18,6 @@ public class ControllerKnight : MonoBehaviour {
 	}
 	void Update () {
         move = Input.GetAxis("Horizontal");
-        anim.SetFloat("Run", Mathf.Abs(move));
         anim.SetBool("Ground", isGrounded);
 
         if (move > 0 && !facingRight)
@@ -30,23 +26,7 @@ public class ControllerKnight : MonoBehaviour {
         {
             Flip();
         }
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundRadius, queEsGround);
-        if (isGrounded && Input.GetButtonDown("Jump"))
-        {
-            isGrounded = false;
-            jumpPresion = true;
-        }
 	 }
-    void FixedUpdate()
-    {
-        rb.velocity = new Vector2(move * maxSpeed, rb.velocity.y);
-
-        if (jumpPresion)
-        {
-            jumpPresion = false;
-            rb.AddForce(new Vector2(0, jumpFuerza));
-        }
-    }
     void Flip()
     {
         facingRight = !facingRight;
