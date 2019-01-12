@@ -5,10 +5,6 @@ using UnityEngine;
 public class ControllerKnight : MonoBehaviour {
     private Rigidbody2D rb;
     private Animator anim;
-    private bool isGrounded = false;
-    public Transform groundCheck;
-    private float groundRadius = 0.1f;
-    public LayerMask queEsGround;
     private float move;
     private bool facingRight = true;
     
@@ -16,9 +12,8 @@ public class ControllerKnight : MonoBehaviour {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 	}
-	void Update () {
-        move = Input.GetAxis("Horizontal");
-        anim.SetBool("Ground", isGrounded);
+	void Update ()
+    {
 
         if (move > 0 && !facingRight)
             Flip();
