@@ -63,6 +63,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scenes\LevelManager.cs" />
     <Compile Include="Assets\Sprites\Character\Controller\ControllerKnight.cs" />
+    <Compile Include="Assets\Sprites\Character\Enemies\RangeAttack.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/2D-Game/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
