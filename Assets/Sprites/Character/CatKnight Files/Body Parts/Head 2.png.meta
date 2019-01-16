@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Sprites/Character/CatKnight Files/Body Parts/Head 2.png.meta
 guid: 63ed3b44d792f86409782c44aa11ba00
+=======
+guid: 691be47a02167e04aa73a14079f5594a
+>>>>>>> 163964261c3dfc750c11b9a338be8154ea2bc1ab:Assets/Sprites/Character/CatKnight Files/Body Parts/Head 2.png.meta
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD:Assets/Sprites/Character/CatKnight Files/Body Parts/Head 2.png.meta
     spriteID: 9c4da69642026504cb6ec92c84a3d970
+=======
+    spriteID: c1c52aeb6467c4a41b745292cd89c513
+>>>>>>> 163964261c3dfc750c11b9a338be8154ea2bc1ab:Assets/Sprites/Character/CatKnight Files/Body Parts/Head 2.png.meta
     vertices: []
     indices: 
     edges: []
